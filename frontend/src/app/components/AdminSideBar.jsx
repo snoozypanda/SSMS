@@ -2,7 +2,7 @@ import React from 'react'
 
 const AdminSideBar = () => {
   return (
-      <div className="w-64 bg-gray-800 text-white fixed h-full flex flex-col">
+      <div className="w-64 bg-gray-800 text-white fixed h-full flex flex-col z-100">
 
         <div className="flex items-center justify-center py-5 px-4">
           <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile Image" className="w-12 h-12 rounded-full border-2 border-white mr-3" />

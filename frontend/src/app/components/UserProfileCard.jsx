@@ -1,6 +1,6 @@
 const UserProfileCard = ({ image, name, role, dateJoined }) => {
   return (
-    <div className="card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform transition-all">
+    <div className="card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform transition-all z-[-1]">
       <div className="flex items-center mb-4">
         <img src={image} alt="Profile Image" className="w-16 h-16 rounded-full mr-4" />
         <div>

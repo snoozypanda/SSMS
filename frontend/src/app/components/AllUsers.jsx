@@ -10,7 +10,7 @@ const AllUsers = ({ users }) => {
 
   return (
     <div>
-      <div className="ml-64 container mx-auto p-6 w-full">
+      <div className="ml-64 container mx-auto p-6 overflow-none w-full">
         <div className="mb-6 flex items-center justify-center">
           <input
             type="text"
@@ -24,7 +24,7 @@ const AllUsers = ({ users }) => {
 
         <h1 className="text-3xl font-semibold text-gray-800 mb-8">List of Students</h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-6 overflow-hidden w-full">
           {filteredStudents.map((user, index) => (
             <UserProfileCard 
               key={index}

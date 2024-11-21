@@ -51,7 +51,7 @@ const AddUser = () => {
   return (
     <div className='flex'>
       <AdminSideBar />
-    <div className="ml-64 font-sans w-screen h-screen flex items-center justify-center md:overflow-scroll">
+    <div className="mt-5 ml-64 font-sans w-screen  flex items-center justify-center md:overflow-scroll">
       <div className="w-full max-w-3xl p-8 rounded-xl shadow-xl bg-white">
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-10">Add New Student</h1>
         <form className="space-y-8" onSubmit={handleSubmit} encType="multipart/form-data">
