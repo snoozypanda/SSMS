@@ -4,10 +4,10 @@ import AdminDashboard from '@app/components/AdminDashboard';
 import AdminSideBar from '@app/components/AdminSideBar';
 import React from 'react'
 
-const StudentDashboard = () => {
+const CourseDashboard = () => {
   return (
-    <AdminDashboard listPath="/admin/students/all" role="Student" />
+    <AdminDashboard listPath="/admin/courses/all" role="Course" />
   )
 }
 
-export default StudentDashboard;
+export default CourseDashboard;

@@ -6,7 +6,7 @@ import React from 'react'
 
 const StudentDashboard = () => {
   return (
-    <AdminDashboard listPath="/admin/students/all" role="Student" />
+    <AdminDashboard listPath="/admin/teachers/all" role="Teacher" />
   )
 }
 
