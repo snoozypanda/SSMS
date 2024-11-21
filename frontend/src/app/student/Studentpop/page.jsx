@@ -68,7 +68,7 @@ export default function Page() {
       </aside>
 
       {/* Main Content Area */}
-      <main className="flex-1 p-6 sm:ml-64 bg-white flex space-x-6">
+      <main className="flex-1 p-6 sm:ml-64 bg-white flex space-x-6  h-screen transition-transform -translate-x-full sm:translate-x-0">
         {/* Left Section - Table */}
         <div className="flex-1 bg-white p-4 rounded-lg shadow">
           <h2 className="text-xl font-bold text-black mb-4">Student List</h2>
