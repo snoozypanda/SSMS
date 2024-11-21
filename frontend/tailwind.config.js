@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "custom-color-yelow": "#FAEF5C",
+        "custom-color-yellow": "#FAEF5C",
         "custom-color-green": {
           300: "#98D86F",
           400: "#41B886",
@@ -19,6 +19,9 @@ module.exports = {
           400: "#106D7D",
           900: "#2F4858",
         },
+      },
+      fontFamily: {
+        sans: ["Roboto", "ui-sans-serif", "system-ui"],
       },
     },
   },

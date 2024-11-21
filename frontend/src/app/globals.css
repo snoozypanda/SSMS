@@ -2,20 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*,
+*::after,
+*::before {
+  @apply box-border p-0 m-0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.profile-picture {
+  @apply w-full h-full object-cover rounded-full aspect-square;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.transition_css {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.after-bg-color {
+  @apply z-0 absolute left-0 top-0 w-0 h-full bg-custom-color-blue-300 opacity-0 rounded-lg;
+  @apply group-hover:w-full group-hover:opacity-100;
+}
+
+.course-list {
+  @apply absolute top-0 left-0 opacity-0 transition_css;
+}
+
+.course-list-clicked {
+  @apply absolute top-10 left-0 opacity-100 shadow-2xl transition_css;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-custom-color-blue-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-custom-color-blue-400;
 }
