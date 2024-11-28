@@ -1,7 +1,9 @@
 "use client";
 import { useState } from "react";
 
-import { FaAngleDown } from "react-icons/fa";
+import DropdownMenu from "@components/DropdownMenu";
+
+import { gradeList } from "../@attendance/page";
 
 const studentList = [
   {
@@ -75,9 +77,14 @@ const courseList = [
 
 const StudentGrade = () => {
   const [courseClicked, setCourseClicked] = useState(false);
+  const [gradeClicked, setGradeClicked] = useState(false);
 
   const handleCourseClicked = () => {
     setCourseClicked((prev) => !prev);
+  };
+
+  const handleGradeClicked = () => {
+    setGradeClicked((prev) => !prev);
   };
 
   return (
@@ -90,33 +97,24 @@ const StudentGrade = () => {
       </div>
 
       <div className="w-full flex-grow flex flex-col px-11 py-11 overflow-y-auto">
-        <div className="flex justify-between text-white relative mb-6">
-          <h1 className="text-black text-3xl mb-6 uppercase font-semibold tracking-wider">
+        <div className="flex justify-between text-white relative mb-12">
+          <h1 className="text-black text-3xl uppercase font-semibold tracking-wider">
             Student Grade
           </h1>
 
-          <div className="relative">
-            <div
-              onClick={handleCourseClicked}
-              className="z-10 relative px-4 py-1 text-xl font-semibold flex items-center gap-3 bg-custom-color-blue-900 w-fit hover:text-gray-500 cursor-pointer transition_css"
-            >
-              <span>Course</span> <FaAngleDown size={25} />
-            </div>
-
-            <div
-              className={`bg-custom-color-blue-900 w-fit py-3 my-1 rounded-lg course-list ${
-                courseClicked ? `course-list-clicked` : `course-list`
-              }`}
-            >
-              {courseList.map((course) => (
-                <div
-                  key={course.id}
-                  className="px-5 py-1 hover:bg-white hover:bg-opacity-25 cursor-pointer transition_css hover:text-green-400"
-                >
-                  {course.name}
-                </div>
-              ))}
-            </div>
+          <div className="flex gap-5">
+            <DropdownMenu
+              name="Grade"
+              menuList={gradeList}
+              handleMenuClicked={handleGradeClicked}
+              menuClicked={gradeClicked}
+            />
+            <DropdownMenu
+              name="Course"
+              menuList={courseList}
+              handleMenuClicked={handleCourseClicked}
+              menuClicked={courseClicked}
+            />
           </div>
         </div>
 
