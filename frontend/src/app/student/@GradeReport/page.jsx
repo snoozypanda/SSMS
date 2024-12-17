@@ -16,7 +16,13 @@ const GradeReport = () => {
   };
 
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", padding: "20px" }}>
+    <div className="w-full h-full flex flex-col">
+      <div className="px-32 py-10 bg-custom-color-green-400 text-white">
+        <h1 className="text-3xl font-extrabold tracking-wider leading-[64px]">
+          Grade
+        </h1>
+        <p className="text-lg text-wrap">Your grade appears here.</p>
+      </div>
       <h1>Grade Report</h1>
       <div>
         <strong>Name:</strong> {student.name}
