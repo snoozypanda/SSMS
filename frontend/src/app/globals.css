@@ -16,17 +16,60 @@
   @apply transition-all duration-300 ease-in-out;
 }
 
+/* Drop down menu */
+.course-list {
+  @apply absolute top-0 left-0 w-full opacity-0 transition_css;
+}
+
+.course-list-clicked {
+  @apply absolute top-10 left-0 w-full opacity-100 shadow-2xl transition_css;
+}
+
+/* SideBar */
+.sidebar {
+  @apply w-[20%] h-full py-9 bg-custom-color-blue-900 text-white flex flex-col;
+}
+
+.sidebar-profile {
+  @apply profile-picture outline outline-offset-4 outline-custom-color-yellow;
+}
+
+.sidebar-menu {
+  @apply h-9 flex gap-16 items-center text-xl tracking-wide cursor-pointer hover:bg-white hover:bg-opacity-10 transition_css;
+}
+
+.sidebar-menu-div {
+  @apply w-0 opacity-0 h-full bg-custom-color-green-300 group-hover:w-4 group-hover:opacity-100 transition_css;
+}
+
+.sidebar-menu-logout {
+  @apply px-16 hover:px-20 py-2 text-xl font-semibold bg-red-500 rounded-sm hover:bg-red-600 transition_css flex items-center gap-4;
+}
+
+/* Dashboard */
+.heading-div {
+  @apply px-32 py-10 bg-custom-color-green-400 text-white;
+}
+
+.h1-title {
+  @apply text-3xl font-extrabold tracking-wider leading-[64px];
+}
+
+.p-description {
+  @apply text-lg text-wrap;
+}
+
+.manage-card {
+  @apply max-w-[450px] px-4 py-2 border flex items-center gap-5 shadow-xl rounded-lg bg-custom-color-blue-900 hover:shadow-lg cursor-pointer relative transition_css;
+}
+
 .after-bg-color {
   @apply z-0 absolute left-0 top-0 w-0 h-full bg-custom-color-blue-300 opacity-0 rounded-lg;
   @apply group-hover:w-full group-hover:opacity-100;
 }
 
-.course-list {
-  @apply absolute top-0 left-0 opacity-0 transition_css;
-}
-
-.course-list-clicked {
-  @apply absolute top-10 left-0 opacity-100 shadow-2xl transition_css;
+.manage-card-title {
+  @apply text-xl font-semibold tracking-wide uppercase leading-8 text-white;
 }
 
 /* Custom scrollbar styles */
