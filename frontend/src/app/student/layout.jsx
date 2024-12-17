@@ -20,7 +20,7 @@ export default function StudentLayout({
       <StudentSideBar handleActive={handleActive} />
 
       {/* Main content area */}
-      <div className="flex-grow p-4">
+      <div className="flex-grow">
         {activeSection === "dashboard" && dashboard}
         {activeSection === "class_enrolled" && ClassEnrolled}
         {activeSection === "class_schedule" && classSchedule}

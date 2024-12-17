@@ -38,45 +38,43 @@ const ClassesEnrolled = () => {
   };
 
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", padding: "20px" }}>
-      <h1>Enrolled Classes</h1>
-      <div>
-        <strong>Name:</strong> {student.name}
+    <div className="w-full h-full flex flex-col">
+      <div className="px-32 py-10 bg-custom-color-green-400 text-white">
+        <h1 className="text-3xl font-extrabold tracking-wider leading-[64px]">
+          Class Enrolled
+        </h1>
+        <p className="text-lg text-wrap">Enrolled classes.</p>
       </div>
-      <div>
-        <strong>Student ID:</strong> {student.id}
-      </div>
-      <div>
-        <strong>Semester:</strong> {student.semester}
-      </div>
-      <h2>Classes</h2>
-      <table
-        border="1"
-        cellPadding="10"
-        cellSpacing="0"
-        style={{ borderCollapse: "collapse", width: "100%" }}
-      >
-        <thead>
-          <tr>
-            <th>Course Code</th>
-            <th>Course Name</th>
-            <th>Instructor</th>
-            <th>Credits</th>
-            <th>Schedule</th>
-          </tr>
-        </thead>
-        <tbody>
-          {student.enrolledClasses.map((cls, index) => (
-            <tr key={index}>
-              <td>{cls.code}</td>
-              <td>{cls.name}</td>
-              <td>{cls.instructor}</td>
-              <td>{cls.credits}</td>
-              <td>{cls.schedule}</td>
+      <div className="w-full flex-grow flex flex-col px-11 py-11 overflow-y-auto">
+        <table
+          border="1"
+          cellPadding="10"
+          cellSpacing="0"
+          style={{ borderCollapse: "collapse", width: "100%" }}
+          className="border-4 border-solid border-black-500"
+        >
+          <thead>
+            <tr className="bg-custom-color-blue-900 text-white">
+              <th>Course Code</th>
+              <th>Course Name</th>
+              <th>Instructor</th>
+              <th>Credits</th>
+              <th>Schedule</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {student.enrolledClasses.map((cls, index) => (
+              <tr key={index}>
+                <td>{cls.code}</td>
+                <td>{cls.name}</td>
+                <td>{cls.instructor}</td>
+                <td>{cls.credits}</td>
+                <td>{cls.schedule}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

@@ -23,41 +23,33 @@ const GradeReport = () => {
         </h1>
         <p className="text-lg text-wrap">Your grade appears here.</p>
       </div>
-      <h1>Grade Report</h1>
-      <div>
-        <strong>Name:</strong> {student.name}
-      </div>
-      <div>
-        <strong>Student ID:</strong> {student.id}
-      </div>
-      <div>
-        <strong>Semester:</strong> {student.semester}
-      </div>
-      <h2>Courses</h2>
-      <table
-        border="1"
-        cellPadding="10"
-        cellSpacing="0"
-        style={{ borderCollapse: "collapse", width: "100%" }}
-      >
-        <thead>
-          <tr>
-            <th>Course Code</th>
-            <th>Course Name</th>
-            <th>Grade</th>
-          </tr>
-        </thead>
-        <tbody>
-          {student.courses.map((course, index) => (
-            <tr key={index}>
-              <td>{course.code}</td>
-              <td>{course.name}</td>
-              <td>{course.grade}</td>
+      <div className="w-full flex-grow flex flex-col px-11 py-11 overflow-y-auto">
+        <table
+          border="1"
+          cellPadding="10"
+          cellSpacing="0"
+          style={{ borderCollapse: "collapse", width: "100%" }}
+        >
+          <thead>
+            <tr className="bg-custom-color-blue-900 text-white">
+              <th>Course Code</th>
+              <th>Course Name</th>
+              <th>Grade</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-      <h3>GPA: {student.gpa}</h3>
+          </thead>
+          <tbody>
+            {student.courses.map((course, index) => (
+              <tr key={index}>
+                <td>{course.code}</td>
+                <td>{course.name}</td>
+                <td>{course.grade}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <h3>GPA: {student.gpa}</h3>
+      </div>
     </div>
   );
 };

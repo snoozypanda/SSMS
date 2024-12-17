@@ -8,9 +8,9 @@ export default function Studentpage() {
       {/* <StudentSideBar /> */}
 
       {/* Main Content */}
-      <div className="flex flex-col w-full">
+      <div className="w-full h-full flex flex-col">
         {/* Header Section */}
-        <div className="bg-custom-color-green-400 text-white px-10 py-8">
+        <div className="px-32 py-10 bg-custom-color-green-400 text-white">
           <h1 className="text-3xl font-extrabold tracking-wider leading-[64px]">
             Student Dashboard
           </h1>
