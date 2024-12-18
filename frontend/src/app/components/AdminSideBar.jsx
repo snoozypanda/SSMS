@@ -1,5 +1,7 @@
 import React from "react";
 import { IoExitOutline } from "react-icons/io5";
+import { ProfilePicture } from "@assets";
+import Image from "next/image";
 
 const AdminSideBar = ({ handleActive }) => {
   return (
@@ -31,15 +33,17 @@ const AdminSideBar = ({ handleActive }) => {
     //   </div>
     // </div>
     <div className="w-[20%] h-full py-9 bg-custom-color-blue-900 text-white">
-      <div className="flex justify-center items-center gap-5 border-b py-9">
+      <div className="flex justify-center items-center gap-5 border-b py-10">
         <div>
-          {/* <Image
-            src={ProfilePicture}
-            alt="Profile Picture"
-            width={50}
-            height={50}
-            className="profile-picture outline outline-offset-4 outline-custom-color-yellow"
-          /> */}
+          {
+            <Image
+              src={ProfilePicture}
+              alt="Profile Picture"
+              width={50}
+              height={50}
+              className="profile-picture outline outline-offset-4 outline-custom-color-yellow"
+            />
+          }
         </div>
         <div>
           <h1 className="font-sans font-semibold text-2xl tracking-wide">
