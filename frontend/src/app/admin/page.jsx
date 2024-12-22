@@ -8,7 +8,7 @@ const AdminPage = () => {
     <div className="flex">
       <AdminSideBar />
       <div className=" w-full" s>
-        <div className="bg-custom-color-green-400 text-white  py-8 pt-4 px-10 mb-10 gap-5">
+        <div className="px-32 py-10  fixed left-0 right-0 w-full bg-custom-color-green-400 text-white ">
           <h2 className="text-3xl font-semibold mb-4 px-10 pt-5  mx-0 ">
             Welcome to the Admin Dashboard
           </h2>

@@ -55,7 +55,7 @@ const AdminSideBar = ({ handleActive }) => {
 
       <div className="flex flex-col gap-5 py-9">
         <div
-          onClick={() => handleActive("dashboard")}
+          onClick={() => handleActive("dashboard1")}
           className="group h-9 flex gap-16 items-center text-xl tracking-wide cursor-pointer hover:bg-white hover:bg-opacity-10 transition_css"
         >
           <div className="w-0 opacity-0 h-full bg-custom-color-green-300 group-hover:w-4 group-hover:opacity-100 transition_css" />
@@ -63,7 +63,7 @@ const AdminSideBar = ({ handleActive }) => {
         </div>
 
         <div
-          onClick={() => handleActive("student_attendance")}
+          onClick={() => handleActive("all_student_activities")}
           className="group h-9 flex gap-16 items-center text-xl tracking-wide cursor-pointer hover:bg-white hover:bg-opacity-10 transition_css"
         >
           <div className="w-0 opacity-0 h-full bg-custom-color-green-300 group-hover:w-4 group-hover:opacity-100 transition_css" />
@@ -71,14 +71,14 @@ const AdminSideBar = ({ handleActive }) => {
         </div>
 
         <div
-          onClick={() => handleActive("student_grade")}
+          onClick={() => handleActive("all_teacher_activities")}
           className="group h-9 flex gap-16 items-center text-xl tracking-wide cursor-pointer hover:bg-white hover:bg-opacity-10 transition_css"
         >
           <div className="w-0 opacity-0 h-full bg-custom-color-green-300 group-hover:w-4 group-hover:opacity-100 transition_css" />
           <span className="ml-2">Teacher</span>
         </div>
         <div
-          onClick={() => handleActive("student_grade")}
+          onClick={() => handleActive("all_course_activities")}
           className="group h-9 flex gap-16 items-center text-xl tracking-wide cursor-pointer hover:bg-white hover:bg-opacity-10 transition_css"
         >
           <div className="w-0 opacity-0 h-full bg-custom-color-green-300 group-hover:w-4 group-hover:opacity-100 transition_css" />

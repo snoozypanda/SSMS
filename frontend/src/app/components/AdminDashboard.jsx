@@ -1,11 +1,7 @@
 import React from "react";
-import AdminSideBar from "./AdminSideBar";
-
 const AdminDashboard = ({ role, listPath }) => {
   return (
     <div className="flex">
-      <AdminSideBar />
-
       <div className="ml-64 p-6 w-full flex flex-col align-center">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold text-gray-800">
@@ -26,7 +22,7 @@ const AdminDashboard = ({ role, listPath }) => {
             </h3>
             <p className="text-gray-600 mb-4">Add new {role} to the system.</p>
             <a
-              href="/admin/add"
+              href="C:\Users\abera\OneDrive\Desktop\METISSMS\SSMS\frontend\src\app\admin\add\page.jsx"
               className="text-blue-600 hover:underline font-semibold"
             >
               Add

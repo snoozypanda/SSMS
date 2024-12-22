@@ -2,9 +2,9 @@ import { useState } from "react";
 import UserProfileCard from "./UserProfileCard";
 
 const AllUsers = ({ users }) => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredStudents = users.filter(user =>
+  const filteredStudents = users.filter((user) =>
     user.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -22,11 +22,13 @@ const AllUsers = ({ users }) => {
           />
         </div>
 
-        <h1 className="text-3xl font-semibold text-gray-800 mb-8">List of Students</h1>
+        <h1 className="text-3xl font-semibold text-gray-800 mb-8">
+          List of Students
+        </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-6 overflow-hidden w-full">
           {filteredStudents.map((user, index) => (
-            <UserProfileCard 
+            <UserProfileCard
               key={index}
               image={user.image}
               name={user.name}
@@ -39,6 +41,5 @@ const AllUsers = ({ users }) => {
     </div>
   );
 };
-
 
 export default AllUsers;
