@@ -1,5 +1,7 @@
-<<<<<<< HEAD
+"use_client";
+import React from "react";
 import LoginPage from "@components/LoginPage";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-800 flex flex-col">
@@ -24,9 +26,9 @@ export default function Home() {
         <p className="text-lg">Contact Us</p>
         <p className="text-sm">Email: studentService@gmail.com</p>
       </footer>
-=======
-"use_client";
-import React from "react";
+    </div>
+  );
+}
 
 function LoginPage() {
   return (
@@ -60,7 +62,7 @@ function LoginPage() {
             <input
               type="password"
               id="password"
-              className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:bg-slate-50 "
+              className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:bg-slate-50"
             />
           </div>
 
@@ -73,8 +75,6 @@ function LoginPage() {
           </div>
         </form>
       </div>
->>>>>>> 50495ed (Student and login page)
     </div>
   );
 }
-export default LoginPage;
