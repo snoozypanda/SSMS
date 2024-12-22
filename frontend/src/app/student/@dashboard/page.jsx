@@ -3,14 +3,14 @@ import StudentSideBar from "@containers/StudentSideBar";
 
 export default function Studentpage() {
   return (
-    <div className="flex h-screen w-screen">
+    <div className=" w-full h-full flex flex-col">
       {/* Sidebar */}
       {/* <StudentSideBar /> */}
 
       {/* Main Content */}
       <div className="w-full h-full flex flex-col">
         {/* Header Section */}
-        <div className="px-32 py-10 bg-custom-color-green-400 text-white">
+        <div className="px-32 py-9  bg-custom-color-green-400 text-white">
           <h1 className="text-3xl font-extrabold tracking-wider leading-[64px]">
             Student Dashboard
           </h1>

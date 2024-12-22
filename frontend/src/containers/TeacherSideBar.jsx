@@ -48,6 +48,13 @@ const TeacherSideBar = ({ handleActive }) => {
           <div className="sidebar-menu-div" />
           <span className="ml-2">Student Grade</span>
         </div>
+        <div
+          onClick={() => handleActive("schedule")}
+          className="sidebar-menu group"
+        >
+          <div className="sidebar-menu-div" />
+          <span className="ml-2">Teacher Schedule</span>
+        </div>
       </div>
 
       <div className="flex-grow flex justify-center items-center">

@@ -1,42 +1,40 @@
-import React from "react";
+const student = {
+  name: "John Doe",
+  id: "AAU123456",
+  semester: "Fall 2024",
+  enrolledClasses: [
+    {
+      code: "CS101",
+      name: "Introduction to Computer Science",
+      instructor: "Dr. Sarah Johnson",
+      credits: 3,
+      schedule: "Monday & Wednesday, 8:00 AM - 9:30 AM",
+    },
+    {
+      code: "MATH201",
+      name: "Calculus II",
+      instructor: "Prof. Michael Brown",
+      credits: 4,
+      schedule: "Tuesday & Thursday, 10:00 AM - 11:30 AM",
+    },
+    {
+      code: "PHYS301",
+      name: "Physics I",
+      instructor: "Dr. Emily White",
+      credits: 3,
+      schedule: "Wednesday & Friday, 1:00 PM - 2:30 PM",
+    },
+    {
+      code: "ENG102",
+      name: "English Composition",
+      instructor: "Ms. Rachel Green",
+      credits: 2,
+      schedule: "Friday, 10:00 AM - 11:30 AM",
+    },
+  ],
+};
 
-const ClassesEnrolled = () => {
-  const student = {
-    name: "John Doe",
-    id: "AAU123456",
-    semester: "Fall 2024",
-    enrolledClasses: [
-      {
-        code: "CS101",
-        name: "Introduction to Computer Science",
-        instructor: "Dr. Sarah Johnson",
-        credits: 3,
-        schedule: "Monday & Wednesday, 8:00 AM - 9:30 AM",
-      },
-      {
-        code: "MATH201",
-        name: "Calculus II",
-        instructor: "Prof. Michael Brown",
-        credits: 4,
-        schedule: "Tuesday & Thursday, 10:00 AM - 11:30 AM",
-      },
-      {
-        code: "PHYS301",
-        name: "Physics I",
-        instructor: "Dr. Emily White",
-        credits: 3,
-        schedule: "Wednesday & Friday, 1:00 PM - 2:30 PM",
-      },
-      {
-        code: "ENG102",
-        name: "English Composition",
-        instructor: "Ms. Rachel Green",
-        credits: 2,
-        schedule: "Friday, 10:00 AM - 11:30 AM",
-      },
-    ],
-  };
-
+export default function TeacherSchedule() {
   return (
     <div className="w-full h-full flex flex-col">
       <div className="px-32 py-10 bg-custom-color-green-400 text-white">
@@ -72,6 +70,4 @@ const ClassesEnrolled = () => {
       </div>
     </div>
   );
-};
-
-export default ClassesEnrolled;
+}
