@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-import DropdownMenu from "@components/DropdownMenu";
+import DropdownMenu from "../../../../components/DropdownMenu";
 
 import { gradeList } from "../@attendance/page";
 

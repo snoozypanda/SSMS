@@ -2,10 +2,10 @@
 import React from "react";
 const DashboardAdmin = ({ role, listPath }) => {
   return (
-    <div className="flex">
-      <div className="flex">
-        <div className=" w-full" s>
-          <div className="bg-custom-color-green-400 text-white  py-8 pt-4 px-20 mb-10 gap-5">
+    <div className="w-full h-full flex flex-col">
+      <div className="w-full h-full flex flex-col">
+        <div className=" w-full h-full flex flex-col">
+          <div className="bg-custom-color-green-400 text-white  px-32 py-6 ">
             <h2 className="text-3xl font-semibold mb-4 px-10 pt-5  mx-0 ">
               Welcome to the Admin Dashboard
             </h2>
@@ -18,8 +18,8 @@ const DashboardAdmin = ({ role, listPath }) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
             <div className=" bg-custom-color-blue-900 m-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex items-center justify-between">
               <div className="flex items-center ">
-                <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center">
-                  <span className="font-semibold text-xl">T</span>
+                <div className="w-1 h-12 bg-green-600 text-white rounded-full flex items-center justify-center">
+                  <span className="font-semibold text-xl"></span>
                 </div>
                 <div className="z-10  ">
                   <h3 className="manage-card-title text-xl font-semibold">
