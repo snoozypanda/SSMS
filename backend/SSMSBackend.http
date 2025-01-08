@@ -1,0 +1,6 @@
+@SSMSBackend_HostAddress = http://localhost:5091
+
+GET {{SSMSBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
